@@ -1,0 +1,15 @@
+// This is a list of banned users.
+// This file shouldn't be edited manually, script will do it for you.
+
+// The syntax is |SteamID|Banned|Banner|TimeRemaining|TimeBanned|*
+// * SteamID = SteamID of the banner player
+// * Banned = Name of the banned player
+// * Banner = Name of the player that banned a person
+// * TimeRemaining = Minutes left before he can play again. 0 = Permanent
+// * TimeBanned = For how long time he originally was banned.
+
+// A line has to start with |[U: otherwise the script will think it is a comment
+// A line also needs exactly 6 of those: |
+
+
+

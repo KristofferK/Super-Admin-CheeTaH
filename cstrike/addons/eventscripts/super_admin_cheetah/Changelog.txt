@@ -1,0 +1,114 @@
+SAC changelog
+*3.1
+**Fixed ban. Forgot to change this to steamid3.
+**Remove burn, gravity and disarm. Seems like es.fire doesn't work properly?
+**Fixed not being able to add admins with | in their name.
+**Fixed not being able to ban players with | in their name.
+
+*3.0
+**Now works with Steamid3
+
+*2.0.1
+**Fixed /give command!
+
+
+*2.0
+**Added a new Fun Command (Main Menu -> Fun Commands)
+***Skins. Allows admins with access to fun stuff, to set the model of a player. The model list can be found in ../cfg/eventscripts/super_admin_cheetah/skinslist.txt
+**I think that was it. But not sure. Might have done a few minor tweaks some weeks ago. But I forgot to write down exactly what I changed! ^^
+
+
+*1.9
+**Hopefully server doesn't crash when changing a players team, on a Linux server
+**Hopefully server doesn't crash when giving someone a weapon, on a Linux server
+**Now makes sure that the person is admin when he uses centermsg (/C MSG)
+**You can now use Mini-Games on Linux. I ain't sure if it works though, I haven't a Linux server that I can test on.
+
+
+*1.8
+**Added a few more files in ../addons/eventscripts/super_admin_cheetah/
+***Changed Flags.txt to a nice looked .html file (Flag List.html) - Idea by Maxolabird, also done by him :)
+***A .html file about admins.txt and how to use it (Using admins.html)
+**When using "Save location" or "Teleport" without have set any location, both from menu, then you will get resent to page 3, instead of page 1.
+**Swap player to CT doesn't list CTs anymore. Swap player to T doesn't list Ts anymore.
+**Added more admin commands:
+***Give - Gives an user an item.
+****From say: "/give <player> <item>". ex: /give cheetah weapon_ak47
+****From menu: Go to "Fun Commands", choose "Give Weapon", choose which weapon to give, and finally choose the player.
+**Made a few changes to the INI file:
+***Removed #default! from the menu action phrases (better look) - Idea by Maxolabird, also done by him :)
+***Changed x2.0 and x1.0 gravity/speed to 2.0 and 1.0 - Idea by Maxolabird, also done by him :)
+***Changed the changing-map-message. - Idea by Maxolabird, also done by him :)
+***Maxolabird also did some more things.
+
+*1.7
+**When using a menu that searches for players matching something (like only dead, only alive), and noone matches the thing we wanted, then it will no longer say "2. No players matching X", now it just says "No players matching X". Don't worry if you didn't understood that line, it doesn't really makes sense to me either.
+**The sound list (music menu) is now generated from a file: "../cfg/eventscripts/super_admin_cheetah/soundlist.txt", in there, there are some examples of how it works. When you select a song in the music menu, you will get resent to the page, where the chosen chosen is from. In 1.6 (and below), it would always send back to page 1. NOTE: It seems like CSS stores the sounds on start up, so the custom sounds migth first play properly for them, after they have downloaded the sounds AND restarted the game.
+**The props list (prop menu) is now generated from a file: "../cfg/eventscripts/super_admin_cheetah/propslist.txt", in there, there are some examples of how it works.
+**Mini-games is disabled on Linux, due to crash.
+**Added unban:
+***Via client console/chat the syntax is: /unban <steamid>
+***Via server console/chat the syntax is: sac_unban <steamid>
+***Via menu: Type /sac, choose Player Management, and then Unban.
+***This only works on players that has been banned by SAC. All bans are stored in "../cfg/eventscripts/super_admin_cheetah/banned.txt"
+
+*1.6
+**Made the menus look better - No more empty line after the "update list", now there are some lines (-------)
+**Added Portuguese for the commands added in 1.4, 1.5 and 1.6
+**Added effects for slay - Big thanks to L'In20Cible
+**Added two new admin messaging things:
+***Private say (/p name message)
+***Center say (/c message)
+**Added some commands that all can use:
+***/currentmap - tells the user the current map
+***/timeleft - tells the user how long time there is left before map ends
+***/thetime - tells the user the time
+**Added more admin commands:
+***/teleportto - Teleports players to another player. Currenlty can NOT be used from menu. Syntax when using it from chat/console is: /TeleportTo <players to move> <the player they should get moved to>
+
+*1.5
+**Removed PYC files from the script, allowing it to get approved
+**Now have flags for what clients can NOT do. If a client has the "ban" flag, then he can NOT ban people. Due to this, there is a new syntax is the admins.txt file, so if you are upgrading, you will 'need' to edit your admins.txt, otherwise they won't be added as admins.
+**Added a new option to the main menu: Change Map, in there you will find a list of maps on the server
+**You can now ban from menu (in 1.4, it was only from say/console command), it can be found in player management
+**Fixed message, it wasn't set to anything, so you had to type "0 hi", to write "hi" as admin. It is now set to / by default, so you will type "/ hi" for "hi". - I could have sworn that I had tested it, hmm, meh :P
+
+*1.4
+**Not really an edit of the script itself, but the pictures are now JPG files, instead of BMP. Making the .zip file size about 33% of before.
+**When you spawn a prop, instead of sending you to page 1 no matter what, it will now send you to the page that the spawned prop is on. So if you spawn a prop from page 2, you will get resent to page 2. The props in the prop-menu is also alphabetical sorted.
+**Added more admin commands:
+***Ban - Bans a player from the server for X minutes - Only available from chat/console! usage: /Ban <players> <time>
+**Added a new option to the main menu: Player Management, in there you will find:
+***Kick - Also available from chat/console with: /Kick <players>
+***Mute - Also available from chat/console with: /Mute <players> <time>
+***Swap Player To Opposite Team - Also available from chat/console with: /SwapO <players>
+***Swap Player To Spectator - Also available from chat/console with: /spec <players>
+***Swap Player To T - Also available from chat/console with: /TeamT <players>
+***Swap Player To CT - Also available from chat/console with: /TeamCT <players>
+
+*1.3
+**Fixed crash on respawn
+**Disable "Delete this Prop" on linux-servers, due to crash. I will re-enable it, if I find a nice way to make it not crash!
+**Added more translations:
+***German/Deutsch by FragHarry
+***French/Francais by FMIS
+***Portuguese by Maxolahird
+
+*1.2
+**Added more admin commands:
+***/msg <message> - If you are admin, it will send a message to the whole server, mhm, I guess you know what admin message is. If you aren't admin, it will send the message to admins on server.
+***/noclip <players> - gives/removes noclip to/from the player - Available from chat/console and 'Fun Commands'!
+***/freeze <players> - freezes/unfreezes the player - Available from chat/console and 'Fun Commands'!
+***/sethealth <player> <health> - sets player health - Only available from chat/console!
+***/addhealth <player> <health> - adds health to the player - Only available from chat/console!
+***/takehealth <player> <health> - takes some HP from the players health - Only available from chat/console!
+
+*1.1
+**Now uses es.server.queuecmd instead of using es.prop_dynamic_create directly, this should hopefully fix that Linux servers crashes on spawn create. I sadly can't test this, as I haven't any Linux server. Please let me know if it still crashes, or if it's fixed! :)
+**Added more admin commands:
+***/setcash <player> <cash> - sets the player cash reserve - Only available from chat/console!
+***/addcash <player> <cash> - adds cash to the players cash reserve - Only available from chat/console!
+***/takecash <player> <cash> - takes cash from the players cash reserve - Only available from chat/console!
+
+*1.0
+**Released

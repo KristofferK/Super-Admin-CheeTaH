@@ -1,0 +1,39 @@
+// This is the props that can be found in props menu
+// Props menu can be accessed through main menu, which is opened with the command chosen in config.cfg - usually /sac
+
+// The syntax is: "type" "prop name" "prop path"
+// Type can be either "D" for dynamic, or "P" for physic
+// The " are VERY important, if you don't include them, the line will be handled as a comment.
+// It also needs to have exactly 6 of those " (apostrophe), otherwise it will be handled as a comment aswell.
+
+// Will work: "D" "Sound1" "music/Ravenholm_1.mp3"
+// Won't work: D Sound1 music/Ravenholm_1.mp3
+
+// The sound is from INSIDE models/ folder, so:
+// "cstrike/models/props_vehicles/apc001.mdl" would simply be "props_vehicles/apc001.mdl"
+
+// Good, now let's get started.
+
+"D" "Antlion" "antlion" // Optional comment
+"D" "Antlion Guard" "antlion_guard"
+"D" "APC (Tank)" "props_vehicles/apc001.mdl"
+"P" "Barrel" "props_c17/oildrum001"
+"P" "Cabinet" "props/cs_office/file_cabinet3"
+"P" "Computer Keyboard" "props/cs_office/computer_keyboard.mdl"
+"D" "Crow" "crow"
+"D" "Dog" "dog"
+"P" "Explosive Barrel" "props_c17/oildrum001_explosive"
+"D" "Fountain" "props/de_inferno/fountain"
+"D" "Headcrab" "headcrab"
+"D" "Lamppost" "props_c17/lamppost03a_off"
+"P" "Orange" "props/cs_italy/orange.mdl"
+"D" "Pipe" "props_pipes/PipeCluster32d_001a"
+"D" "Propane Machine" "props/de_train/Processor_NoBase"
+"D" "Rock" "props/de_inferno/de_inferno_boulder_01"
+"D" "Sofa" "props/cs_militia/couch"
+"P" "Swampy Turtle" "props/de_tides/Vending_turtle.mdl"
+"D" "Table" "props/cs_militia/table_kitchen"
+"D" "Toilet" "props/cs_militia/toilet"
+"P" "Vending Machine" "props_interiors/vendingmachinesoda01a.mdl"
+"P" "Water Melon" "props_junk/watermelon01.mdl"
+"D" "Wooden Box" "props/cs_militia/crate_extralargemill"

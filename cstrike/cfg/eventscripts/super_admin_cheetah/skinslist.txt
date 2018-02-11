@@ -1,0 +1,25 @@
+// This is the skins that can be found in skins menu
+// skins menu can be accessed through Main Menu->Fun Commands, which is opened with the command chosen in config.cfg - usually /sac
+
+// The syntax is: "prop name" "prop path"
+// The " are VERY important, if you don't include them, the line will be handled as a comment.
+// It also needs to have exactly 4 of those " (apostrophe), otherwise it will be handled as a comment aswell.
+
+// Will work: "Antlion" "antlion"
+// Won't work: Antlion antlion
+
+// The path is from INSIDE models/ folder, so:
+// "cstrike/models/props_vehicles/apc001.mdl" would simply be "props_vehicles/apc001.mdl"
+
+// Good, now let's get started.
+
+"Antlion Skin" "antlion"
+"Antlion Guard" "antlion_guard"
+"APC (Tank)" "props_vehicles/apc001.mdl"
+"Barrel" "props_c17/oildrum001"
+"Crow" "crow"
+"Dog" "dog"
+"Explosive Barrel" "props_c17/oildrum001_explosive"
+"Headcrab" "headcrab"
+"Toilet" "props/cs_militia/toilet"
+"Vending Machine" "props_interiors/vendingmachinesoda01a.mdl"

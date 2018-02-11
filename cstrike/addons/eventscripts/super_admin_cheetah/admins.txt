@@ -1,0 +1,15 @@
+// The ones provided are just examples of the syntax!
+// For a better description please check the file "Using admins.txt.html"
+
+
+// [U:1:15179747] (Previously: STEAM_0:1:7589873) has no flags (limits), he has the name CheeTaH and can add other admins.
+|[U:1:15179747]|1|TheCheeTaH|Everything
+
+
+// [U:1:15179747] (Previously: STEAM_0:1:7589873) has kick,ban flag, and can't add other admins
+|[U:1:11809458]|0|GabenSmurf|Kick,ban
+
+
+
+// [U:1:53642401] can not add admins. He has the name Snickers. He was added from ingame by TheCheeTaH([U:1:15179747]) on 2015-12-19 15:33:46
+|[U:1:53642401]|0|Snickers|ban,kick,changemap,minigames

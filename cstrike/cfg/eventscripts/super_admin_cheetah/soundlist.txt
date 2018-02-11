@@ -1,0 +1,37 @@
+// This is the sounds that can be found in the music menu.
+// Music menu can be accessed through main menu, which is opened with the command chosen in config.cfg - usually /sac
+
+// The files automatically gets downloaded to the client.
+
+// The syntax is: "name" "path"
+// The " are VERY important, if you don't include them, the line will be handled as a comment.
+// It also needs to have exactly 4 of those " (apostrophe), otherwise it will be handled as a comment aswell.
+
+// Will work: "Sound1" "music/Ravenholm_1.mp3"
+// Won't work: Sound1 music/Ravenholm_1.mp3
+
+// The sound is from INSIDE sound/ folder, so:
+// "cstrike/sound/music/Ravenholm_1.mp3" would simply be "music/Ravenholm_1.mp3"
+
+// Good, now let's get started.
+
+"Sound 1 [0:30 - Calm]" "music/Ravenholm_1.mp3" // you could add a comment here if you want..
+"Sound 2 [0:31 - Calm]" "music/HL2_song10.mp3"
+"Sound 3 [0:35 - Calm]" "music/HL2_song11.mp3"
+"Sound 4 [0:46 - Action]" "music/HL2_song6.mp3"
+"Sound 5 [0:51 - Calm]" "music/HL2_song7.mp3"
+"Sound 6 [0:54 - Calm]" "music/HL2_song13.mp3"
+"Sound 7 [1:00 - Calm]" "music/HL2_song8.mp3"
+"Sound 8 [1:00 - Calm]" "music/HL2_song17.mp3"
+"Sound 9 [1:05 - Action]" "music/HL2_song4.mp3"
+"Sound 10 [1:10 - Action]" "music/HL2_song12_long.mp3"
+"Sound 11 [1:10 - Action]" "music/HL2_song15.mp3"
+"Sound 12 [1:30 - Action]" "music/HL2_song3.mp3"
+"Sound 13 [1:40 - Calm]" "music/HL2_song1.mp3"
+"Sound 14 [1:43 - Calm]" "music/HL2_song30.mp3"
+"Sound 15 [1:56 - Calm]" "music/HL2_song19.mp3"
+"Sound 16 [2:19 - Action]" "music/HL2_song29.mp3"
+"Sound 17 [2:20 - Action]" "music/HL2_song20_submix4.mp3"
+"Sound 18 [2:37 - Action]" "music/HL2_song14.mp3"
+"Sound 19 [2:50 - Action]" "music/HL2_song16.mp3"
+"Sound 20 [2:51 - Calm]" "music/HL2_song2.mp3"
